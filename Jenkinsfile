@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage ('Clone application repository') {
+    stage ('Cloning application repository') {
       steps {
         sh 'printenv'
         git branch: 'main', url: "${env.TARGET_APPLICATION_REPO_URL}"
